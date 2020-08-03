@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forma su PHP</title>
+</head>
+<body>
+<!-- iki form2.php atsiradimo kreipesi i form.php -->
+<form action="form2.php" method="post"> 
+<input type="text" name="name" placeholder="enter name"><br>
+<input type="text" name="age" placeholder="enter age"><br>
+<input type="password" name="pasword" placeholder="enter pasword"><br>
+<input type="hidden" name="hid" value="test" >
+
+<input type="checkbox" name="php">PHP<br>
+<input type="checkbox" name="js">js<br>
+<input type="checkbox" name="python">python<br>
+<input type="checkbox" name="C#">c#<br>
+
+<!-- Pavyzdys su chekbox'ais -->
+<input type="checkbox" name="color" value="red">Red<br>
+<input type="checkbox" name="color" value="blue">Blue<br>
+<input type="checkbox" name="color" value="white">White<br>
+
+<!-- Pavyzdys su iskrentanciu meniu. Multiply - leidzia zymeti kelis variantus -->
+<select name="periodas[]" multiple size="6">
+    <option value="">Išsirinkite savo variantą:</option>
+    <option value="menesis">Menesis</option>
+    <option value="pusemetu">Puse metu</option>
+    <option value="metus">Metus</option>
+    <option value="nepamenu">Nepamenu</option>
+</select><br>
+
+<!-- ************** Perjungėjai -->
+<input type="radio" name="slide" value="1">1
+<input type="radio" name="slide" value="2">2
+<input type="radio" name="slide" value="3">3<br>
+
+<!-- **************** Išsiuntimo mygtukas -->
+<input type="submit" value="Išsiūsti">
+</form>    
+
+</body>
+</html>
